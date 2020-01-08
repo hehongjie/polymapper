@@ -1,0 +1,64 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    min-width: 1200px;
+}
+
+html, body, input, button {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.controls {
+    padding: 12px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+.controls-content {
+    display: flex;
+    align-items: baseline;
+}
+
+.control-container {
+    margin: 6px;
+}
+
+.control-color {
+    vertical-align: middle;
+}
+
+.control-radius {
+    width: 46px;
+}
+
+.control-button {
+    width: 70px;
+    height: 28px;
+}
+
+.control-mini-button {
+    width: 40px;
+}
+
+.control-file {
+    display: none;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.control-button.on {
+    border-style: inset;
+}

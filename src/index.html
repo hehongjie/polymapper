@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polymapper</title>
+    <link rel="icon" href="styles/favicon.png" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="https://unpkg.com/nonvalid@1/dist/nonvalid.min.js"></script>
+    <script src="config/key.js" defer></script>
+    <script src="config/params.js" defer></script>
+    <script src="scripts/helpers.js" defer></script>
+    <script src="scripts/core.js" defer></script>
+</head>
+<body>
+<section class="controls">
+    <form class="controls-section markers">
+        <fieldset>
+            <legend>Markers</legend>
+            <div class="controls-content">
+                <section class="control-container color"><label>Color: <input type="color" id="marker-color" class="control-color" /></label></section>
+                <section class="control-container radius"><label>Radius: <input type="number" id="marker-radius" class="control-radius" /></label></section>
+                <section class="control-container display"><label><input type="checkbox" id="marker-display" checked />Display</label></section>
+                <section class="control-container import">
+                    <button type="button" class="control-button" id="marker-import">Import</button>
+                    <input type="file" id="marker-import-file" class="control-file" />
+                </section>
+            </div>
+        </fieldset>
+    </form>
+    <form class="controls-section polygons">
+        <fieldset>
+            <legend>Polygons</legend>
+            <div class="controls-content">
+                <section class="control-container color"><label>Color: <input type="color" id="polygon-color" class="control-color" /></label></section>
+                <section class="control-container display"><label><input type="checkbox" id="polygon-display" checked />Display</label></section>
+                <section class="control-container editable"><label><input type="checkbox" id="polygon-editable" checked />Editable</label></section>
+                <section class="control-container import">
+                    <button type="button" class="control-button" id="polygon-import">Import</button>
+                    <input type="file" id="polygon-import-file" class="control-file" />
+                </section>
+                <section class="control-container create"><button type="button" class="control-button" id="polygon-create">Create</button></section>
+                <section class="control-container delete"><button type="button" class="control-button" id="polygon-delete">Delete</button></section>
+                <section class="control-container undo">
+                    <button type="button" class="control-button control-mini-button" id="polygon-undo" title="Undo" disabled>&#8617;</button>
+                </section>
+                <section class="control-container redo">
+                    <button type="button" class="control-button control-mini-button" id="polygon-redo" title="Redo" disabled>&#8618;</button>
+                </section>
+                <section class="control-container export"><button type="button" class="control-button" id="polygon-export">Export</button></section>
+            </div>
+        </fieldset>
+    </form>
+</section>
+<section class="map" id="map"></section>
+</body>
+</html>
